@@ -1,0 +1,14 @@
+---
+description: Safety rules for Namecheap API credentials, DNS changes, and paid registrar actions
+alwaysApply: true
+---
+
+Never log, echo, quote, or ask the user to paste a Namecheap API key. Credentials belong in the plugin's Configure variables (`NAMECHEAP_API_USER`, `NAMECHEAP_API_KEY`, `NAMECHEAP_CLIENT_IP`, and optional `NAMECHEAP_USERNAME`).
+
+`NAMECHEAP_CLIENT_IP` must be the public IPv4 address whitelisted in Namecheap API Access. Do not invent an IP, and do not replace the configured value with an auto-detected address.
+
+Prefer read tools (`namecheap_auth_status`, `namecheap_list_domains`, `namecheap_check_domains`, `namecheap_get_domain_info`, `namecheap_get_dns_hosts`, `namecheap_get_balances`) unless the user explicitly asks to change DNS.
+
+Namecheap `setHosts` replaces the entire host list. Records omitted from the write are deleted. Read current hosts first, show the full resulting set, and get confirmation before `namecheap_set_dns_hosts` or `namecheap_update_dns_host`.
+
+Confirm with the user before any paid Namecheap action, including registration, renewal, transfer, and premium purchases. This plugin does not provide those tools. An availability check is not a purchase.

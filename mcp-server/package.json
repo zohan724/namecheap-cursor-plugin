@@ -1,0 +1,21 @@
+{
+  "name": "namecheap-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bundled stdio MCP server for the Namecheap Cursor plugin.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "fast-xml-parser": "^5.11.1",
+    "zod": "^3.25.76"
+  }
+}
