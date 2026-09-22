@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Domain registry plugin">
+  <rect width="128" height="128" rx="28" fill="#12324A"/>
+  <circle cx="62" cy="68" r="30" fill="none" stroke="#7DDECB" stroke-width="6"/>
+  <ellipse cx="62" cy="68" rx="14" ry="30" fill="none" stroke="#7DDECB" stroke-width="4"/>
+  <path d="M32 68h60M38 54h48M38 82h48" fill="none" stroke="#7DDECB" stroke-width="3" stroke-linecap="round"/>
+  <rect x="76" y="22" width="32" height="22" rx="6" fill="#F2C14E"/>
+  <circle cx="86" cy="33" r="3" fill="#12324A"/>
+  <path d="M92 33h10" stroke="#12324A" stroke-width="2" stroke-linecap="round"/>
+</svg>

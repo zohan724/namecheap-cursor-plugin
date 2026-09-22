@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "namecheap": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/mcp-server/index.mjs"],
+      "env": {
+        "NAMECHEAP_API_USER": "${NAMECHEAP_API_USER}",
+        "NAMECHEAP_API_KEY": "${NAMECHEAP_API_KEY}",
+        "NAMECHEAP_CLIENT_IP": "${NAMECHEAP_CLIENT_IP}",
+        "NAMECHEAP_USERNAME": "${NAMECHEAP_USERNAME}"
+      }
+    }
+  }
+}

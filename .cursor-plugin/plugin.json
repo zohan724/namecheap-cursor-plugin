@@ -1,0 +1,47 @@
+{
+  "name": "namecheap",
+  "displayName": "Namecheap",
+  "version": "1.0.0",
+  "description": "Manage Namecheap domains, DNS, availability checks, and account balance from Cursor / Grok Bot.",
+  "author": {
+    "name": "Zohan"
+  },
+  "license": "MIT",
+  "keywords": ["namecheap", "domains", "dns", "mcp", "registrar"],
+  "logo": "assets/logo.svg",
+  "repository": "https://github.com/zohan724/namecheap-cursor-plugin",
+  "homepage": "https://github.com/zohan724/namecheap-cursor-plugin",
+  "variables": {
+    "type": "object",
+    "required": ["NAMECHEAP_API_USER", "NAMECHEAP_API_KEY", "NAMECHEAP_CLIENT_IP"],
+    "properties": {
+      "NAMECHEAP_API_USER": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20,
+        "title": "API user",
+        "description": "Namecheap API username. This is your Namecheap account username."
+      },
+      "NAMECHEAP_API_KEY": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 50,
+        "title": "API key",
+        "description": "Namecheap API key from Profile → Tools → API Access. Set it here only. Do not paste it into chat."
+      },
+      "NAMECHEAP_CLIENT_IP": {
+        "type": "string",
+        "minLength": 7,
+        "maxLength": 15,
+        "title": "Client IP",
+        "description": "Public IPv4 address whitelisted in Namecheap API Access. Namecheap accepts IPv4 only. This must be the egress address that calls the API."
+      },
+      "NAMECHEAP_USERNAME": {
+        "type": "string",
+        "maxLength": 20,
+        "title": "Username",
+        "description": "Optional UserName for API calls. Leave blank to use the API user."
+      }
+    }
+  }
+}
